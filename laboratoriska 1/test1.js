@@ -12,6 +12,6 @@ function plusFive(a){
 
 function helloWorld(){
     let hello = "hello";
-    document.querySelector("#paraWorld").innerHTML = `${hello} +  world!`;
+    document.querySelector("#paraWorld").innerHTML = `${hello} world!`;
 }
     

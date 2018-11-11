@@ -20,7 +20,7 @@ function Rectangle(height, width){
     this.width = width;
 }
 
-Rectangle.prototype.RectanglePerimeter = function(){
+Rectangle.prototype.getPerimeter = function(){
     return ` ${2 * (this.height + this.width)}`
 }
 
@@ -33,13 +33,13 @@ let rectangle2 = new Rectangle(12, 15);
 
 // function calculatePerimeter(){
 //     document.querySelector("#biggestPerimeter").innerHTML = `The biggest rectangle has a perimeter of 
-//     ${rectangle1.RectanglePerimeter()>rectangle2.RectanglePerimeter() ? rectangle1.RectanglePerimeter() :
-//      rectangle2.RectanglePerimeter()}`;
+//     ${rectangle1.getPerimeter()>rectangle2.getPerimeter() ? rectangle1.getPerimeter() :
+//      rectangle2.getPerimeter()}`;
 // }
 
 function calculatePerimeter(){
     document.querySelector("#biggestPerimeter").innerHTML = `The biggest rectangle has a perimeter of 
-    ${Math.max(rectangle1.RectanglePerimeter(), rectangle2.RectanglePerimeter())}`;
+    ${Math.max(rectangle1.getPerimeter(), rectangle2.getPerimeter())}`;
 }
 
 window.onload = function(){
