@@ -8,6 +8,7 @@ function showLength() {
 
 function arrayIteration(){
     let sum = 0;
+    let neiskoristena_promelinva;
     for (let i = 0; i < nums.length; i++) {
          sum += nums[i];
         
