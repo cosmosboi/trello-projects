@@ -49,3 +49,23 @@ timer(p2, 3.141592);
 
 console.dir(timer);
 console.dir(temp);
+
+nums = [1, 2 ,3 [4,5], [6,7,8], 9]
+
+function flatten(arr) {
+    let flatArray = []; // [1, ]
+                        // [2, ]
+                        // [3, ]
+    //[ ]
+    arr.forEach(function(value){
+        if(Array.isArray(value)){
+            flatArray = flatArray.concat(flatten(value))
+        }
+        else{
+            flatArray.push(value);
+        }
+    })
+    return flatArray;
+}
+
+flatten(nums);
